@@ -8,10 +8,15 @@
     "tauri:dev": "tauri dev",
     "tauri:dev:dark": "GTK_THEME=Adwaita:dark tauri dev",
     "tauri:dev:light": "GTK_THEME=Adwaita:light tauri dev",
-    "tauri:build": "tauri build"
+    "tauri:build": "tauri build",
+    "prepare": "husky",
+    "precommit": "lint-staged"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^2.11.2"
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "@tauri-apps/cli": "^2.11.2",
+    "husky": "^9.1.7"
   },
   "dependencies": {
     "@tauri-apps/plugin-updater": "~2.10.1"
