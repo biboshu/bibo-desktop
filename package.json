@@ -1,0 +1,19 @@
+{
+  "name": "bibo-client",
+  "version": "0.1.0",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:dev:dark": "GTK_THEME=Adwaita:dark tauri dev",
+    "tauri:dev:light": "GTK_THEME=Adwaita:light tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.2"
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-updater": "~2.10.1"
+  }
+}
