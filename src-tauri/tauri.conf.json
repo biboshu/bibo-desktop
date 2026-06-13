@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "identifier": "com.bibo.client",
   "build": {
-    "beforeDevCommand": "cd ../webapp && pnpm run dev -- --host",
+    "beforeDevCommand": "cd ../bibo-webapp && pnpm run dev -- --host",
     "devUrl": "http://localhost:5173",
-    "beforeBuildCommand": "cd ../webapp && pnpm run build:tauri",
+    "beforeBuildCommand": "cd ../bibo-webapp && pnpm run build:tauri",
     "frontendDist": "../frontend"
   },
   "app": {
