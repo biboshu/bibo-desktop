@@ -54,10 +54,6 @@ jobs:
         run: pnpm install --frozen-lockfile
         working-directory: ../webapp
 
-      - name: Build webapp
-        run: pnpm run build:tauri
-        working-directory: ../webapp
-
       - name: Install client dependencies
         run: pnpm install --frozen-lockfile
 
