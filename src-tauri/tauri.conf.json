@@ -27,7 +27,7 @@
     "targets": "all",
     "category": "Productivity",
     "homepage": "https://biboshu.com",
-    "shortDescription": "Bibo Official Client",
+    "shortDescription": "Bibo Official App",
     "license": "AGPL-3.0-or-later",
     "icon": [
       "icons/32x32.png",
@@ -40,9 +40,9 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEFEMEFGMzc3NEUxQ0Q5ODUKUldTRjJSeE9kL01LclV0azJYMG1KY3IwdEhmOUFWUVBvMmV0MkIwTDJobGdlMkVLNmp4ZnVYdXAK",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDgzNTYzMUEzNzFGQjIwQTQKUldTa0lQdHhvekZXZzdSY0FpRUt3SUZWRFFKelVNYjAxckVvbFFFZEJURnpXeHI4SXc2VldCR1gK",
       "endpoints": [
-        "https://github.com/biboshu/bibo-desktop/releases/latest/download/latest.json"
+        "https://github.com/biboshu/bibo-app/releases/latest/download/latest.json"
       ]
     }
   }
