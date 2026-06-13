@@ -25,12 +25,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Checkout webapp
-        uses: actions/checkout@v4
-        with:
-          repository: biboshu/bibo-webapp
-          ref: ${{ github.ref_name }}
-          path: ../webapp
+      - name: Clone webapp
+        run: git clone --depth 1 --branch ${{ github.ref_name }} https://github.com/biboshu/bibo-webapp.git ../webapp
 
       - uses: pnpm/action-setup@v4
         with:
@@ -58,6 +54,10 @@ jobs:
 
       - name: Install webapp dependencies
         run: pnpm install --frozen-lockfile
+        working-directory: ../webapp
+
+      - name: Build webapp
+        run: pnpm run build:tauri
         working-directory: ../webapp
 
       - name: Install client dependencies
